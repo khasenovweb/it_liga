@@ -1,0 +1,208 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+
+<!-- ================= hero ================= -->
+<section class="hero">
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__img">
+                <div class="hero__img__parallaxscene__wrapper">
+                    <div class="hero__img__parallaxscene" data-paralax-scene>
+                        <img src="img/hero__img-1.png" alt="" data-depth="0.2">
+                        <img src="img/hero__img-2.png" alt="" data-depth="0.5">
+                        <img src="img/hero__img-3.png" alt="" data-depth="0.9">
+                        <img src="img/hero__img-4.png" alt="" data-depth="0.1">
+                    </div>
+                </div>
+            </div>
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    Техническая поддержка офисных компьютеров
+                </h1>
+                <p class="hero__subtitle">Первый месяц бесплатно</p>
+                <p class="hero__desc">Увеличим скорость, производительность и безопасность работы серверов за счет автоматизированных процессов</p>
+                <div class="hero__preims">
+                    <!-- hero__preim -->
+                    <div class="hero__preim">
+                        <img src="img/preims__icon-1.png" alt="" class="hero__preim__icon">
+                        <div class="hero__preim__title">Юридическая гарантия на  соблюдение правил работы</div>
+                    </div>
+                    <!-- END hero__preim -->
+                    <!-- hero__preim -->
+                    <div class="hero__preim">
+                        <img src="img/preims__icon-2.png" alt="" class="hero__preim__icon">
+                        <div class="hero__preim__title">Мгновенная реакция на критичные инциденты</div>
+                    </div>
+                    <!-- END hero__preim -->
+                    <!-- hero__preim -->
+                    <div class="hero__preim">
+                        <img src="img/preims__icon-3.png" alt="" class="hero__preim__icon">
+                        <div class="hero__preim__title">Защита от вирусов и несанкционированных доступах</div>
+                    </div>
+                    <!-- END hero__preim -->
+                </div>
+                <button class="btn hero__btn">Скачать коммерческое предложение</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= END hero ================= -->
+<!-- ================= trailer ================= -->
+<section class="trailer">
+    <img src="img/cloud.png" alt="" class="trailer__cloud">
+    <div class="container">
+        <div class="trailer__content">
+            <a href="" class="trailer__video" style="background-image: url(img/video.jpeg);">
+                <div class="trailer__video__play">
+                    <div class="trailer__video__play__text">
+                        <div class="trailer__video__play__text__title">Посмотрите трейлер</div>
+                        <div class="trailer__video__play__text__desc">и узнайте, что будет в коротком видео</div>
+                    </div>
+                    <div class="trailer__video__play__icon">
+                        <img src="img/play.svg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="trailer__text">
+                <div class="trailer__title">Узнайте, за счет каких автоматизированных процессов мы увеличиваем производительность серверов</div>
+                <div class="trailer__text__item">
+                    <img src="img/trailer__item__icon.png" alt="" class="trailer__text__item__icon">
+                    <p class="trailer__text__item__title">Для тех кто хочет максимально оптимизировать и передать обслуживание серверов на аутсорс - посмотрите это видео</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= END trailer ================= -->
+<!-- ================= keys__1 ================= -->
+<section class="keys__1">
+    <div class="container">
+        <div class="keys__1__content">
+            <h2 class="sec__title">
+                Как мы решаем проблемы. Наш кейс <br> “Заокские питомники”
+            </h2>
+            <p class="sec__desc">Задачи, которые были поставленны</p>
+            <div class="keys__1__items">
+                <div class="keys__1__items__paralax" data-paralax-scene>
+                    <img src="img/keys__1__raketa.png" alt="" class="keys__1__raketa" data-depth="0.5">
+                </div>
+                <!-- keys__1__item -->
+                <div class="keys__1__item">
+                    <img src="img/keys__1__item__icon-1.svg" alt="" class="keys__1__item__icon">
+                    <div class="keys__1__item__title">
+                        Не работает Сервер, авария не позволяет работать сотрудникам. Компания парализована и терпит убытки
+                    </div>
+                </div>
+                <!-- END keys__1__item -->
+                <!-- keys__1__item -->
+                <div class="keys__1__item">
+                    <img src="img/keys__1__item__icon-2.svg" alt="" class="keys__1__item__icon">
+                    <div class="keys__1__item__title">
+                        Нет контроля работы сотрудников. Нет единой системы работы.
+                    </div>
+                </div>
+                <!-- END keys__1__item -->
+                <!-- keys__1__item -->
+                <div class="keys__1__item">
+                    <img src="img/keys__1__item__icon-3.svg" alt="" class="keys__1__item__icon">
+                    <div class="keys__1__item__title">
+                        Постоянно пропадает Интернет, не устойчивая связь между объектами
+                    </div>
+                </div>
+                <!-- END keys__1__item -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= END keys__1 ================= -->
+<!-- ================= keys__2 ================= -->
+<section class="keys__2">
+    <img src="img/cloud.png" alt="" class="keys__2__cloud">
+    <div class="container">
+        <div class="keys__2__content">
+            <h2 class="sec__title color">Решение поставленной задачи</h2>
+            <div class="keys__2__items">
+                <div class="keys__2__items__lines">
+                    <!-- <div class="keys__2__items__lines__circle"></div> -->
+                    <div class="keys__2__items__line-gray"></div>
+                    <div class="keys__2__items__line-color"></div>
+                </div>
+                <!-- keys__2__item -->
+                <div class="keys__2__item">
+                    <img class="keys__2__item__img" src="img/keys__2__item__img-1.png" alt="">
+                    <div class="keys__2__item__text">
+                        <div class="keys__2__item__title">
+                            <div class="keys__2__item__title__line">
+                                <div class="keys__2__item__title__line__circle"></div>
+                                <div class="keys__2__item__title__line__color"></div>
+                            </div>
+                            Восстановление работы корпоративных ресурсов
+                        </div>
+                        <div class="keys__2__item__desc">
+                            Группа системных инженеров восстановила работу сервера без потери рабочей информации в ближайшие 6 часов. Провели анализ ошибок, устранили причины выхода из строя. Группа сетевых инженеров провели детальный аудит сетевой безопасности и доступности корпоративных ресурсов. Работы выполнялись в срочном порядке в ночное время. Со следующего дня компания возобновила штатную деятельность.
+                        </div>
+                    </div>
+                </div>
+                <!-- END keys__2__item -->
+                <!-- keys__2__item -->
+                <div class="keys__2__item reverse">
+                    <img class="keys__2__item__img" src="img/keys__2__item__img-2.png" alt="">
+                    <div class="keys__2__item__text">
+                        <div class="keys__2__item__title">
+                            <div class="keys__2__item__title__line">
+                                <div class="keys__2__item__title__line__circle"></div>
+                                <div class="keys__2__item__title__line__color"></div>
+                            </div>
+                            Разработка дорожной карты развития инфраструктуры
+                        </div>
+                        <div class="keys__2__item__desc">
+                            По результатам аудита сетевых и системных инженеров составлен план работ по созданию отказоустойчивой рабочей среды. Согласовали с Заказчиком приоритетность задач, согласовали решения наиболее подходящие под род деятельности компании в соотношении цены и качества
+                        </div>
+                    </div>
+                </div>
+                <!-- END keys__2__item -->
+                <!-- keys__2__item -->
+                <div class="keys__2__item">
+                    <img class="keys__2__item__img" src="img/keys__2__item__img-3.png" alt="">
+                    <div class="keys__2__item__text">
+                        <div class="keys__2__item__title">
+                            <div class="keys__2__item__title__line">
+                                <div class="keys__2__item__title__line__circle"></div>
+                                <div class="keys__2__item__title__line__color"></div>
+                            </div>
+                            Реализация стратегии развития инфраструктуры
+                        </div>
+                        <div class="keys__2__item__desc">
+                            Без дополнительных финансовых вложений Заказчика, используя существующее оборудование была реализована отказоустойчивая рабочая среда. Организован безопасный доступ сотрудников компании к корпоративным ресурсам. Настроена бесшовная беспроводная сеть на территории садового центра (более 1 гектара) для комфортной работы сотрудников компании и покупателей.  Организована система видеонаблюдения на всей территории Заказчика. Внедрена в рабочий процесс система контроля подключений к локальной сети Заказчика. Кроме того, мы нашли достойного поставщика услуг доступа в глобальную сеть Интернет (оператора связи) и совместно с ним провели работы по подключению сети Заказчика к стабильному проводному интернету
+                        </div>
+                    </div>
+                </div>
+                <!-- END keys__2__item -->
+                <!-- keys__2__item -->
+                <div class="keys__2__item reverse">
+                    <img class="keys__2__item__img" src="img/keys__2__item__img-4.png" alt="">
+                    <div class="keys__2__item__text">
+                        <div class="keys__2__item__title">
+                            <div class="keys__2__item__title__line">
+                                <div class="keys__2__item__title__line__circle"></div>
+                                <div class="keys__2__item__title__line__color"></div>
+                            </div>
+                            Ежечасная поддержка
+                        </div>
+                        <div class="keys__2__item__desc">
+                            Ежечасная поддержка На данный момент идет активная поддержка серверного оборудования в рамках договора и SLA
+                        </div>
+                    </div>
+                </div>
+                <!-- END keys__2__item -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= END keys__2 ================= -->
+
+{% endblock %}
