@@ -1,0 +1,95 @@
+.calcsec__calc__wrapper {
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 84rem;
+  position: relative;
+}
+.calcsec__calc__wrapper__parralax-1 {
+  position: absolute;
+  top: -4rem;
+  right: -26rem;
+  z-index: 2;
+}
+.calcsec__calc__wrapper__parralax-1 img {
+  max-width: 32rem;
+}
+.calcsec__calc__wrapper__parralax-2 {
+  position: absolute;
+  top: -4rem;
+  left: -21rem;
+}
+.calcsec__calc__wrapper__parralax-2 img {
+  max-width: 29rem;
+}
+.calcsec__calc {
+  padding: 6rem;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(173, 173, 173, 0.05);
+  border-radius: 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.calcsec__calc__items {
+  display: grid;
+  grid-template-rows: repeat(aut-fill, minmax(-webkit-max-content, 0));
+  grid-template-rows: repeat(aut-fill, minmax(max-content, 0));
+  grid-gap: 2.5rem;
+}
+.calcsec__calc__item {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  grid-gap: 3rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.ui-slider .ui-slider-handle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100%;
+  border: none;
+  background-color: #8A3BFC;
+  top: -0.6rem;
+  cursor: pointer;
+}
+.ui-widget.ui-widget-content {
+  height: 0.4rem;
+  border: none;
+  background-color: #F2F0F0;
+}
+.ui-slider-horizontal .ui-slider-range {
+  background-color: #8A3BFC;
+}
+.calcsec__calc__item__label {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #626262;
+}
+.calcsec__calc__item__result {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #626262;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-self: flex-end;
+  text-align: right;
+}
+.calcsec__calc__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-top: 3.6rem;
+}
+.calcsec__calc__itogo {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #8A3BFC;
+}
