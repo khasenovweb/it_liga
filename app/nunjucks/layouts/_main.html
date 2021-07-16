@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="css/inline.css">
 </head>
@@ -16,10 +17,10 @@
 					</a>
 					<ul class="header__nav">
 						<li>
-							<a href="">о нас</a>
+							<a href="#trailer" data-scroll>о нас</a>
 						</li>
 						<li>
-							<a href="">услуги</a>
+							<a href="#services" data-scroll>услуги</a>
 						</li>
 						<li>
 							<a href="">сотрудничество</a>
@@ -29,7 +30,7 @@
 						</li>
 					</ul>
 					<a href="tel:+7 (495) 369-24-34" class="header__phone">+7 (495) 369-24-34</a>
-					<button class="btn white icon">
+					<button class="btn white icon" data-modal-show="1">
 						<img src="img/phone.svg" alt="" class="btn__icon">
 						<span class="btn__title">Обратный звонок</span>
 					</button>
@@ -41,15 +42,48 @@
 		{% block content %}
 			
 		{% endblock %}
+		
+
+
 		<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
 		<link rel="stylesheet" href="css/main.css">
 
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.fancybox.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/parallax.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="js/headhesive.js"></script>
+		<script src="js/mask.js"></script>
+		<script src="js/validate.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="js/modal.js"></script>
 		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			//Яндекс Карта
+				ymaps.ready(init);
+				var myMapAll;
+
+				function init() {
+					myMapAll = new ymaps.Map("contacts__map", {
+						center: [55.763356, 49.234954],
+						zoom: 10,
+					});
+					var myPlacemark_1 = new ymaps.Placemark([55.763356, 49.234954], {
+						balloonContentHeader: "Название объекта",
+						balloonContentBody: "Описание объекта",
+						balloonContentFooter: "",
+						hintContent: "Кликните для более подробной информации",
+					});
+					myMapAll.geoObjects.add(myPlacemark_1);
+				}
+				//END Яндекс Карта
+		</script>
 	</div>
 </body>
 </html>

@@ -13,6 +13,14 @@
   height: 42.3rem;
   width: 576rem;
 }
+.keys__2__cloud-bottom {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -25rem;
+  height: 42.3rem;
+  width: 576rem;
+}
 .keys__2__items {
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
@@ -20,6 +28,30 @@
   grid-gap: 10rem;
   margin-top: 8rem;
   position: relative;
+}
+.keys__2__items__paralax-1 {
+  position: absolute;
+  top: 0;
+  right: -15rem;
+}
+.keys__2__items__paralax-1 img {
+  max-width: 32rem;
+}
+.keys__2__items__paralax-2 {
+  position: absolute;
+  top: 50%;
+  left: -25rem;
+}
+.keys__2__items__paralax-2 img {
+  max-width: 35rem;
+}
+.keys__2__items__paralax-3 {
+  position: absolute;
+  bottom: 0;
+  right: -25rem;
+}
+.keys__2__items__paralax-3 img {
+  max-width: 27rem;
 }
 .keys__2__items__lines {
   position: absolute;
@@ -97,6 +129,8 @@
   max-height: 32rem;
   justify-self: end;
   width: auto;
+  max-width: 100%;
+  height: auto;
 }
 .keys__2__item__text {
   padding-right: 10rem;

@@ -12,7 +12,7 @@
   position: relative;
 }
 .hero__img__parallaxscene {
-  width: 150%;
+  width: 80rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -47,9 +47,9 @@
   margin-top: 4rem;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
+  gap: 3rem;
 }
 .hero__preim {
-  margin-right: 3rem;
   max-width: 20rem;
 }
 .hero__preim__icon {
@@ -63,4 +63,9 @@
 }
 .hero__btn {
   margin-top: 6rem;
+}
+@media screen and (max-width: 1000px) {
+  .hero__content {
+    grid-template-columns: 4fr 7fr;
+  }
 }

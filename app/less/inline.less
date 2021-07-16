@@ -243,6 +243,7 @@ body {
 
 .global__wrapper {
     overflow-x: hidden;
+    // overflow: hidden;
 
     &:before {
         // content: '';
@@ -261,12 +262,14 @@ body {
 .container {
     max-width: 130rem;
     margin: 0 auto;
+    padding: 0 3rem;
 }
 
 
 .btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 1000px;
     cursor: pointer;
     border: none;
@@ -290,13 +293,28 @@ body {
             0px 10px 20px rgba(99, 56, 162, 0.1),
             0px 4px 0px #F3EFF8
         ;
-        font-weight: normal;
+        color: @main;
+        &:active {
+            box-shadow: 
+                0px 10px 20px rgba(99, 56, 162, 0.1),
+                0px 0px 0px #F3EFF8
+            ;
+            transform: translateY(0.4rem)
+        }
         .btn__title {
             font-size: 1.4rem;
             text-transform: none;
             color: @main;
             font-size: 1.4rem;
+            font-weight: normal;
         }
+    }
+    &:active {
+        box-shadow: 
+            0px 10px 30px rgba(150, 92, 234, 0.33),
+            0px 0px 0px #572C97
+        ;
+        transform: translateY(0.4rem)
     }
 }
 .btn__icon {
@@ -307,3 +325,10 @@ body {
 
 @import "_header.less";
 @import "_hero.less";
+
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 8px;
+    }
+}

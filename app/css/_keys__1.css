@@ -11,6 +11,7 @@
   grid-gap: 3rem;
   margin-top: 4rem;
   position: relative;
+  z-index: 1;
 }
 .keys__1__items__paralax {
   position: absolute;
@@ -19,6 +20,14 @@
 }
 .keys__1__raketa {
   max-width: 40rem;
+}
+.keys__1__items__paralax-2 {
+  position: absolute;
+  left: -19rem;
+  bottom: -27rem;
+}
+.keys__1__items__paralax-2 img {
+  max-width: 31rem;
 }
 .keys__1__item {
   background-color: #fff;
