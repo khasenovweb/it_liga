@@ -13,6 +13,14 @@
 	text-align: center;
 	margin-top: 2rem;
 	color: @main;
+	position: relative;
+	z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+	.sec__title {
+		font-size: 3rem;
+	}
 }
 
 @import "_trailer.less";
@@ -28,3 +36,5 @@
 @import "_contacts.less";
 @import "_footer.less";
 @import "_modal.less";
+@import "_scrollbutton.less";
+

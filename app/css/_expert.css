@@ -94,3 +94,37 @@
   margin-top: 0.6rem;
   text-align: center;
 }
+.expert__main__right__btn {
+  margin-top: 2rem;
+}
+.expert__main__right__btn {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .expert__main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 4rem;
+  }
+  .expert__main__left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .expert__main__btn {
+    display: none;
+  }
+  .expert__main__right__btn {
+    display: block;
+  }
+  .expert__main__title {
+    font-size: 2rem;
+  }
+}

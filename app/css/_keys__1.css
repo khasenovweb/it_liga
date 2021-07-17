@@ -45,3 +45,8 @@
   margin-top: 3rem;
   line-height: 1.4;
 }
+@media screen and (max-width: 800px) {
+  .keys__1__items {
+    grid-template-columns: 1fr;
+  }
+}

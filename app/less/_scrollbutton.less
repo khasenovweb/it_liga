@@ -1,0 +1,36 @@
+@main: #8A3BFC;
+
+.scrollbutton__wrapper {
+    position: fixed;
+    left: 3rem;
+    bottom: 3rem;
+    z-index: 2;
+    transform: scale(0.9);
+    opacity: 0;
+    display: none;
+    &.scrollbutton__active {
+        transition: 0.3s;
+        opacity: 1;
+        transform: scale(1);
+    }
+    &.scrollbutton__show {
+        display: flex;
+        transition: 0.3s ;
+    }
+}
+
+.scrollbutton {
+    background-color: @main;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(138, 59, 252, 0.15);
+    opacity: 0.3;
+    transition: 0.3s;
+    &:hover {
+        opacity: 1;
+    }
+}

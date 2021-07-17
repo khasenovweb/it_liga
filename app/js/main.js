@@ -45,16 +45,7 @@ $(document).ready(function(){
 
 
 
-    $( "[data-polzunok]" ).each(function(i, el){
-        $(el).slider({
-            animate: "slow",
-            range: "min",
-            min: 0,
-            max: 100, 
-            step: 10,
-            value: 50
-        });
-    });
+    
     
 
 
@@ -72,6 +63,14 @@ $(document).ready(function(){
         margin: 30,
         dots: true,
         dotsContainer: '.news__slider__dots',
+        responsive: {
+            0: {
+                items: 1,
+            },
+            900: {
+                items: 3
+            }
+        }
     });
 
     $("[data-scroll]").mPageScroll2id({
@@ -126,6 +125,28 @@ $(document).ready(function(){
             // });
         }
         });
+    });
+
+
+
+    $(window).scroll(function(){
+        var scrolltop = $(window).scrollTop();
+        if( scrolltop >= 1000 ) {
+            $('.scrollbutton__wrapper').addClass('scrollbutton__show');
+            setTimeout(function(){
+                $('.scrollbutton__wrapper').addClass('scrollbutton__active');
+            },10);
+        }else {
+            $('.scrollbutton__wrapper').removeClass('scrollbutton__active');
+            setTimeout(function(){
+                $('.scrollbutton__wrapper').removeClass('scrollbutton__show');
+            },300);
+        }
+    });
+
+    $(".scrollbutton").bind('click', function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 400);    
     });
     
 });

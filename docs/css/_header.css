@@ -1,6 +1,11 @@
 .header {
   padding: 4rem 0;
   background-color: #fff;
+  position: relative;
+}
+.header * {
+  position: relative;
+  z-index: 1;
 }
 .header.headhesive {
   position: fixed;
