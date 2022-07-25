@@ -713,20 +713,32 @@
 <div class="modal__wrapper" data-modal="1">
     <div class="modal">
         <div class="modal__close" data-modal-close="1"></div>
-        <div class="modal__title">Обратный звонок</div>
-        <div class="modal__desc">Оставьте заявку, что-бы получить консультацию</div>
-        <form action="" class="modal__form" data-validate>
-            <div class="modal__form__input">
-                <input type="text" placeholder="Как вас зовут?">
-            </div>
-            <div class="modal__form__input">
-                <input data-mask="phone" type="text" placeholder="Контактый телефон" name="phone">
-            </div>
-            <button class="btn">Оставить заявку на звонок</button>
-            <div class="modal__form__politics">
-                Отправляя заявку я соглашаюсь с <a href="">политикой конфинденциальности</a>
-            </div>
-        </form>
+        <div class="modal__content">
+            <div class="modal__title">Обратный звонок</div>
+            <div class="modal__desc">Оставьте заявку, что-бы получить консультацию</div>
+            <form action="" class="modal__form" data-validate>
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Как вас зовут?">
+                </div>
+                <div class="modal__form__input">
+                    <input data-mask="phone" type="text" placeholder="Контактый телефон" name="phone">
+                </div>
+                <button class="btn">Оставить заявку на звонок</button>
+                <div class="modal__form__politics">
+                    Отправляя заявку я соглашаюсь с <a href="">политикой конфинденциальности</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal__success">
+            <div class="modal__icon success"></div>
+            <div class="modal__title">Спасибо</div>
+            <div class="modal__desc">Что оставили заявку, мы скоро с Вами свяжимся</div>
+        </div>
+        <div class="modal__error">
+            <div class="modal__icon error"></div>
+            <div class="modal__title">Ошибка</div>
+            <div class="modal__desc">Попробуйте снова, введите правильные данные</div>
+        </div>
     </div>
 </div>
 <div class="modal__wrapper" data-modal="2">

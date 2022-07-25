@@ -23,6 +23,8 @@ $('[data-modal]').click(function(){
     thisvar.removeClass('active');
     setTimeout(function(){
         thisvar.hide();
+        thisvar.find('.modal').removeClass('success');
+        thisvar.find('.modal').removeClass('error');
         $('body').css('padding-right', '0');
         $('body').removeClass('body_hidden');
     },300);
@@ -36,8 +38,8 @@ $('[data-modal-close]').click(function(){
     $('.hero__hamburgerblock ').addClass('black');
     setTimeout(function(){
         $('[data-modal="'+id+'"]').hide();
-        $('body').css('padding-right', '0');
-        $('body').removeClass('body_hidden');
+        $('[data-modal="'+id+'"]').find('.modal').removeClass('success');
+        $('[data-modal="'+id+'"]').find('.modal').removeClass('error'); $('body').css('padding-right', '0'); $('body').removeClass('body_hidden');
     },300);
 });
 // Скрываем всплывающее при нажатии на кнопку закрытия

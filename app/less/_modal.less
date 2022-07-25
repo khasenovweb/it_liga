@@ -20,6 +20,34 @@
     border-radius: 2rem;
     max-width: 42rem;
     position: relative;
+    .modal__success {
+        display: none;
+    }
+    .modal__error {
+        display: none;
+    }
+    &.success {
+        .modal__content {
+            display: none;
+        }
+        .modal__success {
+            display: block;
+        }
+        .modal__error {
+            display: none;
+        }
+    }
+    &.error {
+        .modal__content {
+            display: none;
+        }
+        .modal__success {
+            display: none;
+        }
+        .modal__error {
+            display: block;
+        }
+    }
 }
 .modal__icon {
     width: 6rem;

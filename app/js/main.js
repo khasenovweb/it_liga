@@ -115,6 +115,7 @@ $(document).ready(function(){
         },
         submitHandler: function(form) {
             var data = $(form).serialize();
+            console.log('Валидно');
             // $.ajax({
             //     url: '/mail/send-mail-modal.php',
             //     type: 'post',

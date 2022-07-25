@@ -38,6 +38,7 @@ function addSlideData(id, count, summ){
     $('[data-polzunok-count="'+id+'"]').text(count);
     $('[data-polzunok-summ="'+id+'"]').text(summ.toLocaleString('ru'));
     $('[data-polzunok="'+id+'"]').attr('data-summ', summ);
+    $('[data-polzunok="'+id+'"]').attr('data-count', count);
 }
 // ============ END Добавляем значения ползунка ========//
 

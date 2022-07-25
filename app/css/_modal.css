@@ -24,6 +24,30 @@
   max-width: 42rem;
   position: relative;
 }
+.modal .modal__success {
+  display: none;
+}
+.modal .modal__error {
+  display: none;
+}
+.modal.success .modal__content {
+  display: none;
+}
+.modal.success .modal__success {
+  display: block;
+}
+.modal.success .modal__error {
+  display: none;
+}
+.modal.error .modal__content {
+  display: none;
+}
+.modal.error .modal__success {
+  display: none;
+}
+.modal.error .modal__error {
+  display: block;
+}
 .modal__icon {
   width: 6rem;
   height: 6rem;
